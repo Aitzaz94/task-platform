@@ -22,3 +22,12 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+# AI-Powered Task Platform
+
+A fully functional task management system with:
+- Rails API
+- Neo4j graph database
+- Groq LLM integration
+- n8n automation
+- Feedback loops for self-improvement
