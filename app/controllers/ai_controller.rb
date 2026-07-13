@@ -39,7 +39,7 @@ class AiController < ApplicationController
 end
 
 def status
-  data = Redis.current.get("planning_result:#{current_user.id}")
+  data = Sidekiq.redis { |conn| conn.get("planning_result:#{current_user.id}") }
   if data
     render json: JSON.parse(data)
   else
